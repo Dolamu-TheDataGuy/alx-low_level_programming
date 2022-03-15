@@ -3,13 +3,17 @@
  * print_alphabet - prints alphabets from a to z in lower case.
  * Return: Always 0.
  */
-
 void print_alphabet(void)
 {
-	int i;
+	char ch;
 
-	for (i = 97; i <= 122; i++)
+	ch = 'a';
+
+	while (ch <= 'z')
 	{
-		_putchar(i);
+		_putchar(ch);
+		ch++;
 	}
+
+	_putchar('\n');
 }
