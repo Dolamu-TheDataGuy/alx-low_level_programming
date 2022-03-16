@@ -14,7 +14,7 @@ void print_to_98(int n)
 
 		for (i = n; n >= 98; n--)
 		{
-			_putchar("%d", n);
+			_putchar(n);
 			if (n != 98)
 			{
 				_putchar(",");
@@ -28,7 +28,7 @@ void print_to_98(int n)
 
 		for (i = n; n <= 98; n++)
 		{
-			_putchar("%d", n)
+			_putchar(n)
 			if (n != 98)
 			{
 				_putchar(",");
@@ -38,6 +38,6 @@ void print_to_98(int n)
 	}
 	else
 	{
-		_putchar("%d", n);
+		_putchar(n);
 	}
 }
