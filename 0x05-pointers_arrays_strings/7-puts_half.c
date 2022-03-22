@@ -8,7 +8,7 @@
  * Return: Nothing
  */
 
-void puts_half(char *str);
+void puts_half(char *str)
 {
 	int i, h, k;
 
