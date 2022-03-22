@@ -8,7 +8,7 @@
  * Return: an Integer in form of the Length of the string.
  */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int i;
 
