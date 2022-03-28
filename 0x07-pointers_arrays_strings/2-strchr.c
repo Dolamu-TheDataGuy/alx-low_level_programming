@@ -7,7 +7,7 @@
  * Return: NULL if char not found, or pointer to first occurence of char 'c'
  */
 
-char *_strhr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	while (*s != '\0')
 	{
