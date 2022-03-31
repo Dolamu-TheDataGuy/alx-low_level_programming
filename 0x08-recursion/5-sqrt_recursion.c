@@ -9,31 +9,29 @@
 
 int _sqrt_recursion(int n)
 {
-	return (halp(n, 1));
+	return (_sqrt(n, 1));
 }
 
 /**
- * halp - helper function to solve _sqrt_recursion
- * @c: number to determine if sqrt root
- * @i: incrementor to compare against 'c'
- * Return: square root if natural square root, or -1 if none found
+ * _sqrt - sqrt_recursion
+ * @n: integer parameter
+ * @i: integer parameter
+ * Return: sqrt
  */
 
-int halp(int c, int i)
+int _sqrt(int n, int i)
 {
-	int square;
-
-	square = i * i;
-	if (square == c)
-	{
-		return (i);
-	}
-	else if (square < c)
-	{
-		return (halp(c, i + 1));
-	}
-	else
+	if (n < 0)
 	{
 		return (-1);
 	}
+	else if ((i * i) > n)
+	{
+		return (-1);
+	}
+	else if (i * i == n)
+	{
+		return (i);
+	}
+	return (_sqrt(n, i + 1));
 }
