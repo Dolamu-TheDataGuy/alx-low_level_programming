@@ -10,7 +10,7 @@
  * or 0 otherwise.
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int cents, ncoins = 0;
 
