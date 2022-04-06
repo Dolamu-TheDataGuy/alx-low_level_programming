@@ -31,7 +31,6 @@ char *str_concat(char *s1, char *s2)
 		s2++;
 	}
 	s2 = starts2;
-
 	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
 	starts1 = new_str;
 	if (new_str == NULL)
@@ -39,11 +38,15 @@ char *str_concat(char *s1, char *s2)
 	for (; i < (lens1 + lens2); i++)
 	{
 		if (i < lens1)
+		{
 			new_str[i] = *s1;
 			s1++;
+		}
 		else
+		{
 			new_str[i] = *s2;
 			s2++;
+		}
 	}
 	new_str[i] = '\0';
 	return (starts1);
