@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-
+#include <stddef.h>
 /**
  * string_nconcat - a function that allocate memory to a
  * pointer and concatenates two strings
@@ -20,9 +20,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; *(s1 + i) != '\0'; i++)
 		;
-	for (j = 0; j != '\0'; j++)
+	for (j = 0; *(s2 + j) != '\0'; j++)
 		;
 
 	if (n > j)
