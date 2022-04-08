@@ -12,7 +12,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int *count_string;
+	char *count_string;
 	unsigned int i, j, k;
 
 	if (s1 == NULL)
@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > j)
 		n = j;
 
-	count_string = malloc((i + n) * sizeof(int));
+	count_string = malloc((i + n) * sizeof(char));
 	if (count_string == NULL)
 		return (NULL);
 
