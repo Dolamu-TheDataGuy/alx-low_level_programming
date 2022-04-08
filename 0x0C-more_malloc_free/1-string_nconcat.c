@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > j)
 		n = j;
 
-	count_string = malloc((i + n) * sizeof(char));
+	count_string = malloc(((i + n) + 1) * sizeof(char));
 	if (count_string == NULL)
 		return (NULL);
 
@@ -43,5 +43,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			count_string[k] = s2[k - i];
 		}
 	}
+	count_string[k] = '\0';
 	return (count_string);
 }
