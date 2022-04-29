@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- * binary_to_unit - converts a binary number to an unsigned integer
+ * binary_to_uint - converts a binary number to an unsigned integer
  * @b: The binary string to convert
  *
  * Return: The positive number converted from a binary
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int len = 0, count = 0, sum = 0;
 
