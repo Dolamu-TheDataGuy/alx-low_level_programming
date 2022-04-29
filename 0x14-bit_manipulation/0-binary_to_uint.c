@@ -26,9 +26,6 @@ unsigned int binary_to_unit(const char *b)
 		if (b[len] == 49)
 			sum += 1 << count;
 
-		else if (b[len] == 48)
-			sum += 0;
-
 		count++;
 	}
 
