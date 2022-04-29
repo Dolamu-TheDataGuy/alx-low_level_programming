@@ -17,22 +17,22 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	_reduce(n);
+	_divide(n);
 }
 
 /**
- * _reduce - function that reduces the number till it gets to zero.
+ * _divide - function that reduces the number till it gets to zero.
  * @n: number to be reduced
  *
  * Return: reduced number
  */
 
-void _reduce(unsigned long int n)
+void _divide(unsigned long int n)
 {
 	if (n < 1)
 		return;
 
-	_reduce(n >> 1);
+	_divide(n >> 1);
 
 	if (n & 1)
 		_putchar(49);
