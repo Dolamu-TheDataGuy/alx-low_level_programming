@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _atoi(char *s _attribute_ ((unused)))
+int _atoi(char *s __attribute__((unused)))
 {
 	return (0);
 }

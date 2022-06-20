@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _islower(int c _attribute_ ((unused))
+int _isupper(int c __attribute__((unused)))
 {
 	return (0);
 }

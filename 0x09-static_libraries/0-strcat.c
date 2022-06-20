@@ -1,6 +1,6 @@
 #include "main.h"
 
-char *_strncat(char *dest, char *src, int n _attribute_ ((unused)))
+char *_strcat(char *dest __attribute__((unused)), char *src __attribute__((unused)))
 {
-	return (0);
+    return (dest);
 }

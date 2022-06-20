@@ -1,9 +1,6 @@
-include "main.h"
+#include "main.h"
 
-
-int _putchar(char c _attribute_ ((unused)))
+int _putchar(char c  __attribute__((unused)))
 {
-	return (0);
+    return (0);
 }
-
-
