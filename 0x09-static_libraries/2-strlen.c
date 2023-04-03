@@ -1,6 +1,14 @@
 #include "main.h"
 
-int _strlen(char *s __attribute__((unused)))
+int _strlen(char *s)
 {
-    return (0);
+    int i;
+
+    while (s[i] != '\0')
+    {
+        i++;
+    }
+
+    return i;
+
 }
