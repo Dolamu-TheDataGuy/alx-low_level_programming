@@ -12,11 +12,11 @@ char *_strchr(char *s, char c)
     
     while (*s != '\0')
     {
-        if (*s == c);  /** *s is the value at the address in s which is a character**/
+        if (*s == c)  /** *s is the value at the address in s which is a character**/
         {
             return (s);
         }
-        elseif (*(s + 1) == c);
+        else if (*(s + 1) == c)
         {
             return (s + 1);
         }

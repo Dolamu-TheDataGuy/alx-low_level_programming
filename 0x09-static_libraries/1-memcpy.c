@@ -8,7 +8,7 @@
  * Return: pointer to `dest`
  */
 
-char *_strcat(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
     char *yolo; 
 
