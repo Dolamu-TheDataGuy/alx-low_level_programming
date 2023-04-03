@@ -1,6 +1,20 @@
 #include "main.h"
+/**
+ * _isupper - a function that checks for uppercase characters
+ * 
+ * @c: a variable that stores letters
+ * 
+ * Return: returns a value of 1 if the variable c contains an uppercase letter 
+ */
 
-int _isupper(int c __attribute__((unused)))
+int _isupper(int c)
 {
-	return (0);
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
