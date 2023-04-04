@@ -1,25 +1,19 @@
 #include "main.h"
 
 /**
- * _memset - fills memory with a constant byte
- * @s: buffer array
- * @b: constant byte
- * @n: number of bytes of memory area to fill 
- * Description: Fills the first 'n' bytes of the memory area
- * pointed to by 's' with the constant byte 'n' 
- * Returns: Pointer to memory area 's'
+ * _isdigit -function that checks for a digit (0 through 9).
+ * @c: int type number.
+ * Return: 1 if c is a digit, 0 otherwise
  */
 
-char *_memset(char *s, char b, unsigned int n)
+int _isdigit(int c)
 {
-    int i = 0;
-
-    while (n > 0)
-    {
-        s[i] = b;
-        i++;
-        n--;
-    }
-
-    return (s);
+	if (c >= 48 && c <= 57)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

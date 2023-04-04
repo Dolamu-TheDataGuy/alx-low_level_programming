@@ -1,25 +1,23 @@
 #include "main.h"
 
 /**
- * _memset - fills memory with a constant byte
- * @s: buffer array
- * @b: constant byte
- * @n: number of bytes of memory area to fill 
- * Description: Fills the first 'n' bytes of the memory area
- * pointed to by 's' with the constant byte 'n' 
- * Returns: Pointer to memory area 's'
+ * _strncat - concatenate two strings
+ * @dest: string
+ * @src: string
+ * @n: number of elements to concatenate in
+ * Return: pointer to resulting `dest`
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strncat(char *dest, char *src, int n)
 {
-    int i = 0;
+    int i, c;
 
-    while (n > 0)
+    for (i = 0; dest[i] != '\0'; i++)
+        ;
+    for (c = 0; src[c] != '\0' && n > 0; c++, n--, i++)
     {
-        s[i] = b;
-        i++;
-        n--;
+        dest[i] = src[c];
     }
 
-    return (s);
+    return (dest);
 }
