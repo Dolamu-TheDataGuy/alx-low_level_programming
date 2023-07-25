@@ -6,7 +6,6 @@
 
 int * (*foo) (int, int, int);
 
-
 // foo is a pointer to a function that takes 3 ints and 
 // returns an int pointers.
 
@@ -30,3 +29,12 @@ int main(int argc, char **argv) {
     int result = do_operation(add, 5, 34);
     int result2 = do_operation(mul, 2, 4)
 }
+
+
+//Function that calculates sum, the function has an address
+int sum (int a, int b);
+
+// pfun is a pointer to the function sum, and would simply store the address of the function sum
+int (*pfun)(int, int) = sum;
+
+ 
