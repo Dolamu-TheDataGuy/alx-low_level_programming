@@ -1,0 +1,1 @@
+gcc -Wall -g <file_name> -o <exe_name>
